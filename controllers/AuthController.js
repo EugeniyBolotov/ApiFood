@@ -28,5 +28,5 @@ exports.Auth = (req,res)=>{
                 }
             }
         })
-    
+ 
 }
