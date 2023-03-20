@@ -24,7 +24,7 @@ exports.Auth = (req,res)=>{
                     response.statusError(rows,res,401);
                 }
                 else{
-                    response.statuslog(token,res,200);
+                    response.statuslog(200,res,token);
                 }
             }
         })
