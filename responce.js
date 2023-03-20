@@ -18,7 +18,7 @@ exports.statusError = (values,res,status) => {
     res.end()
 }
 
-exports.statuslog = (token,res,status) => {
+exports.statuslog = (status,res,token) => {
     const data = {
         "status": status,
     }
@@ -26,3 +26,4 @@ exports.statuslog = (token,res,status) => {
     res.status(status).json(token);
     res.end()
 }
+
