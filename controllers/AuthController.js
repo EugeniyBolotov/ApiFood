@@ -15,7 +15,7 @@ exports.Auth = (req,res)=>{
         },
     );
         const {login,password} = req.query;
-        db.query(`SELECT * FROM bh8pzn9jfci7qpzb9jo2.users where email = '${login}' and password = '${password}'`, (error,rows,fields) =>{
+        db.query(`SELECT * FROM bh8pzn9jfci7qpzb9jo2.Users where email = '${login}' and password = '${password}'`, (error,rows,fields) =>{
             if(error){
                 response.statusError(rows,res,400);
             }
